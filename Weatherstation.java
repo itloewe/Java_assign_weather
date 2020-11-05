@@ -9,7 +9,7 @@ public class Weatherstation {
 	private int stormAndColdCount = 0;
 	
 	public int getStormAndColdWarningCount(){
-		this.stormAndColdCount;
+		return this.stormAndColdCount;
 	}
 	
 	public Weatherstation(){
@@ -65,3 +65,5 @@ public class Weatherstation {
 		 return chillTemp;
 	}
 }
+
+
