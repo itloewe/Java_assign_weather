@@ -7,6 +7,7 @@ public class WeatherstationTester {
 			System.out.println(weatherstation.generateWeatherMessage());
 		}
 		
+		System.out.println(weatherstation.getStormAndColdWarningCount());
 		System.out.println("========================================================================================");
 	}
 }
