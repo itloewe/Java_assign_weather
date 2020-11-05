@@ -6,6 +6,12 @@ public class Weatherstation {
 	private double temperatureStep = 5;
 	private double windspeedStep = 8;
 	
+	private int stormAndColdCount = 0;
+	
+	public int getStormAndColdWarningCount(){
+		this.stormAndColdCount;
+	}
+	
 	public Weatherstation(){
 		this.temperature = -10.0;
 		this.windspeed = 0;
@@ -19,7 +25,10 @@ public class Weatherstation {
 		String warning = "";
 		
 		if(this.windspeed>=70 && chillTemp <= -18)
+		{
 			warning = WarningMessages.STORM_WARNING;
+			stormAndColdCount++;
+		}
 		else if(this.windspeed >= 70)
 			warning = WarningMessages.WIND_WARNING;
 		else if(chillTemp <= -18)
